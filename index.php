@@ -23,22 +23,15 @@
   <![endif]-->
 </head>
 
-<!--<header>
-  <div id="video_filter">
-    <iframe id="video-bg" frameborder="0" allowfullscreen="1" width="560" height="315" src="https://www.youtube.com/embed/twm_t7U5zkI?autohide=1&autoplay=1&controls=0&enablejsapi=1&iv_load_policy=3&loop=1&modestbranding=1&playsinline=1&rel=0&showinfo=0&wmode=opaque&widgetid=1" style="width: 1349px; height: 758.813px; left: 0px; top: -246.906px;"></iframe>
-  </div>
-  <!--<div class="container">
-    <div class="intro-video">
-        <video id="video" preload autoplay="true" loop="loop" muted="muted" volume="0">
-            <source src="http://s3-eu-west-1.amazonaws.com/docplanner.com/video/timelapse.mp4" type="video/mp4">
-            <source type="video/webm" src="//s3-eu-west-1.amazonaws.com/docplanner.com/video/timelapse.webm"></source>
-        </video>
-    </div>
-  </div>-->
-  
 <body>
+  <div id="container_logo">
+    <img id="logotipo" src="res/Logotipos/logo.png" width="500" height="150"> </img>
+  </div>
 
-  <nav class="navbar navbar-default">
+  <!--/*<h1 id="h1test"> TESTING </h1>-->
+  <!--<img id="logotipo" url(../res/Fondos/leather.jpg)/>-->
+
+  <nav class="navbar">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -61,8 +54,8 @@
             <li><a href="#">CONTACTANOS</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Registrate</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            <li><a href="login.php"><span class="glyphicon glyphicon-user"></span> Registrate</a></li>
+            <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
           </ul>
         </div>
       </div>
