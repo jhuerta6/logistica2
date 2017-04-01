@@ -18,21 +18,28 @@ body{
   overflow: hidden;
 }
 
+#container_logo{
+  text-align: center;
+}
+#logotipo{
+
+}
+
 .navbar {
   /*background: url('res/Fondos/leather.jpg');*/
   border-color: #ffffff;
 }
 /* Title */
-.navbar-default .navbar-brand {
-  color: #e1efdf;
+.navbar .navbar-brand {
+  color: #ffffff;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
   color: #ffffff;
 }
 /* Link */
-.navbar-default .navbar-nav > li > a {
-  color: #e1efdf;
+.navbar .navbar-nav > li > a {
+  color: #ffffff;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -67,55 +74,22 @@ body{
   border-bottom-color: #555;
 }
 /* Mobile version */
-.navbar-default .navbar-toggle {
-  border-color: #e1efdf;
+.navbar .navbar-toggle {
+  border-color: #ffffff;
 }
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
+.navbar .navbar-toggle:hover,
+.navbar .navbar-toggle:focus {
+  background-color: rgba(#ffffff, 0.48);
+}
+.navbar .navbar-toggle .icon-bar {
   background-color: #ffffff;
 }
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #e1efdf;
-}
 @media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  .navbar .navbar-nav .open .dropdown-menu > li > a {
     color: #ffffff;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #777;
+    color: #c4c4c4;
   }
-}
-
-#gk-bg {
-  background: transparent;
-}
-
-#gk-header {
-    background: transparent!important;
-    overflow: hidden;
-}
-#video-bg {
-    height: 100%;
-    position: initial;
-    width: 100%;
-    z-index: -1;
-    background-color: #0ac78e;
-    opacity: 0.6;
-}
-#video-test {
-    height: 100%;
-    position: initial;
-    width: 100%;
-    z-index: -2;
-    background-color: #0ac78e;
-    opacity: 0.6;
-}
-#video_filter{
-  background-color: #0ac78e;
-  opacity: 0.6;
-  z-index: -1;
-}
-h1{
-  z-index: 1;
 }
