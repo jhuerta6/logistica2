@@ -33,43 +33,48 @@ body{
 .navbar .navbar-brand {
   color: #ffffff;
 }
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
   color: #ffffff;
 }
 /* Link */
 .navbar .navbar-nav > li > a {
   color: #ffffff;
 }
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus {
   color: #ffffff;
 }
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
+.nav > li > a:hover,
+.nav > li > a:focus {
+    text-decoration: none;
+    background-color: rgba(0,0,0,.5);
+}
+.navbar .navbar-nav > .active > a,
+.navbar .navbar-nav > .active > a:hover,
+.navbar .navbar-nav > .active > a:focus {
   color: #ffffff;
   background-color: #0ac78e;
 }
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav > .open > a:focus {
+.navbar .navbar-nav > .open > a,
+.navbar .navbar-nav > .open > a:hover,
+.navbar .navbar-nav > .open > a:focus {
   color: #ffffff;
-  background-color: #0ac78e;
+  background-color: #000000;
 }
 /* Caret */
-.navbar-default .navbar-nav > .dropdown > a .caret {
+.navbar .navbar-nav > .dropdown > a .caret {
   border-top-color: #777;
   border-bottom-color: #777;
 }
-.navbar-default .navbar-nav > .dropdown > a:hover .caret,
-.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+.navbar .navbar-nav > .dropdown > a:hover .caret,
+.navbar .navbar-nav > .dropdown > a:focus .caret {
   border-top-color: #333;
   border-bottom-color: #333;
 }
-.navbar-default .navbar-nav > .open > a .caret,
-.navbar-default .navbar-nav > .open > a:hover .caret,
-.navbar-default .navbar-nav > .open > a:focus .caret {
+.navbar .navbar-nav > .open > a .caret,
+.navbar .navbar-nav > .open > a:hover .caret,
+.navbar .navbar-nav > .open > a:focus .caret {
   border-top-color: #fff;
   border-bottom-color: #555;
 }
@@ -79,10 +84,16 @@ body{
 }
 .navbar .navbar-toggle:hover,
 .navbar .navbar-toggle:focus {
-  background-color: rgba(#ffffff, 0.50);
+  background-color: rgba(0,0,0,.5);
 }
 .navbar .navbar-toggle .icon-bar {
   background-color: #ffffff;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    color: #000000;
+    text-decoration: none;
+    background-color: #ffffff;
 }
 @media (max-width: 767px) {
   .navbar .navbar-nav .open .dropdown-menu > li > a {
