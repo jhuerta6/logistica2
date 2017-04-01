@@ -1,0 +1,104 @@
+/* navbar */
+/*#0ac78e*/
+/*when not active = #e1efdf*/
+.navbar-default {
+  background-color: #0ac78e;
+  border-color: #ffffff;
+}
+/* Title */
+.navbar-default .navbar-brand {
+  color: #e1efdf;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ffffff;
+}
+/* Link */
+.navbar-default .navbar-nav > li > a {
+  color: #e1efdf;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: #0ac78e;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #ffffff;
+  background-color: #0ac78e;
+}
+/* Caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+  border-top-color: #777;
+  border-bottom-color: #777;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+  border-top-color: #333;
+  border-bottom-color: #333;
+}
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+  border-top-color: #fff;
+  border-bottom-color: #555;
+}
+/* Mobile version */
+.navbar-default .navbar-toggle {
+  border-color: #e1efdf;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #e1efdf;
+}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #777;
+  }
+}
+
+#gk-bg {
+  background: transparent;
+}
+
+#gk-header {
+    background: transparent!important;
+    overflow: hidden;
+}
+#video-bg {
+    height: 100%;
+    position: initial;
+    width: 100%;
+    z-index: -1;
+    background-color: #0ac78e;
+    opacity: 0.6;
+}
+#video-test {
+    height: 100%;
+    position: initial;
+    width: 100%;
+    z-index: -2;
+    background-color: #0ac78e;
+    opacity: 0.6;
+}
+#video_filter{
+  background-color: #0ac78e;
+  opacity: 0.6;
+  z-index: -1;
+}
+h1{
+  z-index: 1;
+}
