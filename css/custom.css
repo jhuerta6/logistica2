@@ -79,7 +79,7 @@ body{
 }
 .navbar .navbar-toggle:hover,
 .navbar .navbar-toggle:focus {
-  background-color: rgba(#ffffff, 0.48);
+  background-color: rgba(#ffffff, 0.50);
 }
 .navbar .navbar-toggle .icon-bar {
   background-color: #ffffff;
@@ -88,8 +88,8 @@ body{
   .navbar .navbar-nav .open .dropdown-menu > li > a {
     color: #ffffff;
   }
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #c4c4c4;
+  .navbar .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #000000;
   }
 }
