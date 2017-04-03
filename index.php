@@ -25,7 +25,7 @@
 
 <body>
   <div id="container_logo">
-    <img id="logotipo" src="res/Logotipos/logo.png" width="500" height="150"> </img>
+    <img class="img-responsive" id="logotipo" src="res/Logotipos/logo.png" width="500" height="150"> </img>
   </div>
 
   <!--/*<h1 id="h1test"> TESTING </h1>-->
