@@ -25,14 +25,14 @@
                 	$_SESSION['in'] = true;
                     $_SESSION['username'] = $username;
                     $_SESSION['id'] = $row['id'];
-					header('Location: processData.php');
+					header('Location: premium_index.php');
                 }
                 else{
-                    echo "Username or password incorrect";
+                    echo "Nombre de usuario o contraseña incorrecta";
                 }
             }
             else{
-                echo "Username or password incorrect";
+                echo "Nombre de usuario o contraseña incorrecta";
             }
         }
     }
