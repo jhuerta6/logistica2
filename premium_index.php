@@ -292,7 +292,7 @@ $('#correr2A').click(function(){
   <p> Tipo de Cambio = $ <input type="text" value="18.50" id=tipoDeCambio style="color: black;"></p>
   <h3> Calculador de precios para Copart </h3>
   <p> Costo de la unidad = $ <input type="text" id="precioText" style="color: black;"> </p>
-  <p> Flete:  <select id="all_fletes_cop" style="color: black;"> </p>
+  <p> Flete:  <select id="all_fletes_cop" style="color: black;"> </p> <p> </p> <button id="correr" style="color: black;"> Correr calculos </button>
     <option value="0">Sin seleccion</option>
     <option value="300">Abeline, Texas</option>
     <option value="300">Amarillo, Texas</option>
@@ -345,8 +345,6 @@ $('#correr2A').click(function(){
   </form>
   <p>
   </p>
-
-  <button id="correr" style="color: black;"> Correr calculos </button>
   <p> Costo de la unidad incluyendo porcentaje de salida para auction, en dolares (<strong>sin flete</strong>) = $ <input type="text" value="Precio en dolares..." style="color: black;" class="field left" id="precioDolares" readonly> </p>
   <p> Costo de la unidad incluyendo porcentaje de salida para auction, en pesos (<strong>sin flete</strong>) = $ <input type="text" value="Precio en pesos..." style="color: black;" class="field left" id="precioPesos" readonly> </p>
   <p> Precio de salida <strong>con flete</strong> en dolares = $ <input type="text" id="flete_dolares" style="color: black;" readonly></p>
@@ -356,7 +354,7 @@ $('#correr2A').click(function(){
 
   <h3> Calculador de precios para AA </h3>
   <p> Costo de la unidad = $ <input type="text" id="precioText2A" style="color: black;"> </p>
-  <p> Fletes:  <select id="all_fletes_doble" style="color: black;"> </p>
+  <p> Fletes:  <select id="all_fletes_doble" style="color: black;"> </p> <p> </p> <button id="correr2A" style="color: black;"> Correr calculos </button>
     <option value="0">Sin seleccion</option>
     <option value="300" style="color: black;">Abeline, Texas</option>
     <option value="300">Amarillo, Texas</option>
@@ -409,7 +407,7 @@ $('#correr2A').click(function(){
   </form>
   <p>
   </p>
-  <button id="correr2A" style="color: black;"> Correr calculos </button>
+
   <p> Costo de la unidad incluyendo porcentaje de salida para auction, en dolares (<strong>sin flete</strong>) = $ <input type="text" value="Precio en dolares..." style="color: black;" class="field left2A" id="precioDolares2A" readonly> </p>
   <p> Costo de la unidad incluyendo porcentaje de salida para auction, en pesos (<strong>sin flete</strong>) = $ <input type="text" value="Precio en pesos..." style="color: black;" class="field left2A" id="precioPesos2A" readonly> </p>
   <p>Precio de salida <strong> con flete </strong> en dolares = $ <input type="text" id="flete_dolares2A" style="color: black;" readonly></p>
