@@ -347,7 +347,7 @@ $('#correr2A').click(function(){
   </p>
   <p id="tipoDeCambio" value="18.50"></p>
 
-  <button id="correr"> Correr calculos </button>
+  <button id="correr" style="color: black;"> Correr calculos </button>
   <p> Costo de la unidad incluyendo porcentaje de salida para auction, en dolares (<strong>sin flete</strong>) = $ <input type="text" value="Precio en dolares..." style="color: black;" class="field left" id="precioDolares" readonly> </p>
   <p> Costo de la unidad incluyendo porcentaje de salida para auction, en pesos (<strong>sin flete</strong>) = $ <input type="text" value="Precio en pesos..." style="color: black;" class="field left" id="precioPesos" readonly> </p>
   <p> Precio de salida <strong>con flete</strong> en dolares = $ <input type="text" id="flete_dolares" readonly></p>
