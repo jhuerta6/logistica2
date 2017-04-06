@@ -34,20 +34,8 @@ if(!isset($_SESSION['in']) OR !$_SESSION['in']){
   <div id="container_logo">
     <img class="img-responsive" id="logotipo" src="res/Logotipos/logprem.png" width="500" height="150"> </img>
   </div>
-
-  <div id="calculador">
-    <p> Tipo de Cambio = $ <input type="text" value="18.50" id=tipoDeCambio></p>
-
-
-
-  </body>
-
   <!--<img id="logotipo" url(../res/Fondos/leather.jpg)/>-->
-
-
-
   <script>
-
   $(document).ready(function(){
     /*var isMobile = window.matchMedia("only screen and (max-width: 760px)");
 
@@ -300,134 +288,135 @@ $('#correr2A').click(function(){
 </script>
 
 
+<div id="calculador">
+  <p> Tipo de Cambio = $ <input type="text" value="18.50" id=tipoDeCambio></p>
+  <h3> Calculador de precios para Copart </h3>
+  <p> Costo de la unidad = $ <input type="text" id="precioText"> </p>
+  <p> Flete:  <select id="all_fletes_cop"> </p>
+    <option value="0">Sin seleccion</option>
+    <option value="300">Abeline, Texas</option>
+    <option value="300">Amarillo, Texas</option>
+    <option value="300">Austin, Texas</option>
+    <option value="300">Dallas, Texas</option>
+    <option value="300">Forth Worth, Texas</option>
+    <option value="350">Houston, Texas</option>
+    <option value="350">Longview, Texas</option>
+    <option value="300">Lubbock, Texas</option>
+    <option value="350">Lufkin, Texas</option>
+    <option value="230">Albuquerque, New Mexico</option>
+    <option value="230">Denver, Colorado</option>
+    <option value="230">Phoenix, Arizona</option>
+    <option value="230">Tucson, Arizona</option>
+    <option value="330">Oklahoma City, Oklahoma</option>
+    <option value="330">Tulsa, Oklahoma</option>
+    <option value="330">Kansas City, Kansas</option>
+    <option value="330">Wichita, Kansas</option>
+    <option value="450">Lincoln, Nebraska</option>
+    <option value="450">Omaha, Nebraska</option>
+    <option value="390">St. Louis, Missouri</option>
+    <option value="390">Springfield, Missouri</option>
+    <option value="390">Columbia, Missouri</option>
+    <option value="390">Sikeston, Missouri</option>
+    <option value="450">Des Moines, Iowa</option>
+    <option value="500">Davenport, Iowa</option>
+    <option value="500">Eldridge, Iowa</option>
+    <option value="500">East Bethel, Minnesota</option>
+    <option value="420">Little Rock, Arkansas</option>
+    <option value="420">Fayetteville, Arkansas</option>
+    <option value="400">Anaheim, California</option>
+    <option value="500">Bakersfield, California</option>
+    <option value="500">Fremont, California</option>
+    <option value="500">Fresno, California</option>
+    <option value="400">Los Angeles, California</option>
+    <option value="400">Rancho Cucamonga, California</option>
+    <option value="400">San Bernardino, California</option>
+    <option value="450">Van Nuys, California</option>
+    <option value="500">Peoria, Illinois</option>
+    <option value="390">Granite, Illinois</option>
+    <option value="500">Lincoln, Illinois</option>
+    <option value="530">Lexington, Kentucky</option>
+    <option value="530">Louisville, Kentucky</option>
+    <option value="430">Baton Rouge, Louisiana</option>
+    <option value="450">CrashedToys</option>
+  </select>
+  <form name="cilin">
+    <p>Cilindraje de la motocicleta es mayor a 800 cc <input type="radio" name="cilindrajes" id="cilindrajemayor" value="1"></p>
+    <p>Cilindraje de la motocicleta es menor a 800 cc <input type="radio" name="cilindrajes" id="cilindrajemenor" value="0"></p>
+  </form>
+  <p>
+  </p>
+  <p id="tipoDeCambio" value="18.50"></p>
 
-<h3> Calculador de precios para Copart </h3>
-<p> Costo de la unidad = $ <input type="text" id="precioText"> </p>
-<p> Flete:  <select id="all_fletes_cop"> </p>
-  <option value="0">Sin seleccion</option>
-  <option value="300">Abeline, Texas</option>
-  <option value="300">Amarillo, Texas</option>
-  <option value="300">Austin, Texas</option>
-  <option value="300">Dallas, Texas</option>
-  <option value="300">Forth Worth, Texas</option>
-  <option value="350">Houston, Texas</option>
-  <option value="350">Longview, Texas</option>
-  <option value="300">Lubbock, Texas</option>
-  <option value="350">Lufkin, Texas</option>
-  <option value="230">Albuquerque, New Mexico</option>
-  <option value="230">Denver, Colorado</option>
-  <option value="230">Phoenix, Arizona</option>
-  <option value="230">Tucson, Arizona</option>
-  <option value="330">Oklahoma City, Oklahoma</option>
-  <option value="330">Tulsa, Oklahoma</option>
-  <option value="330">Kansas City, Kansas</option>
-  <option value="330">Wichita, Kansas</option>
-  <option value="450">Lincoln, Nebraska</option>
-  <option value="450">Omaha, Nebraska</option>
-  <option value="390">St. Louis, Missouri</option>
-  <option value="390">Springfield, Missouri</option>
-  <option value="390">Columbia, Missouri</option>
-  <option value="390">Sikeston, Missouri</option>
-  <option value="450">Des Moines, Iowa</option>
-  <option value="500">Davenport, Iowa</option>
-  <option value="500">Eldridge, Iowa</option>
-  <option value="500">East Bethel, Minnesota</option>
-  <option value="420">Little Rock, Arkansas</option>
-  <option value="420">Fayetteville, Arkansas</option>
-  <option value="400">Anaheim, California</option>
-  <option value="500">Bakersfield, California</option>
-  <option value="500">Fremont, California</option>
-  <option value="500">Fresno, California</option>
-  <option value="400">Los Angeles, California</option>
-  <option value="400">Rancho Cucamonga, California</option>
-  <option value="400">San Bernardino, California</option>
-  <option value="450">Van Nuys, California</option>
-  <option value="500">Peoria, Illinois</option>
-  <option value="390">Granite, Illinois</option>
-  <option value="500">Lincoln, Illinois</option>
-  <option value="530">Lexington, Kentucky</option>
-  <option value="530">Louisville, Kentucky</option>
-  <option value="430">Baton Rouge, Louisiana</option>
-  <option value="450">CrashedToys</option>
-</select>
-<form name="cilin">
-  <p>Cilindraje de la motocicleta es mayor a 800 cc <input type="radio" name="cilindrajes" id="cilindrajemayor" value="1"></p>
-  <p>Cilindraje de la motocicleta es menor a 800 cc <input type="radio" name="cilindrajes" id="cilindrajemenor" value="0"></p>
-</form>
-<p>
-</p>
-<p id="tipoDeCambio" value="18.50"></p>
+  <button id="correr"> Correr calculos </button>
+  <p> Costo de la unidad incluyendo porcentaje de salida para auction, en dolares (<strong>sin flete</strong>) = $ <input type="text" value="Precio en dolares..." style="color: black;" class="field left" id="precioDolares" readonly> </p>
+  <p> Costo de la unidad incluyendo porcentaje de salida para auction, en pesos (<strong>sin flete</strong>) = $ <input type="text" value="Precio en pesos..." style="color: black;" class="field left" id="precioPesos" readonly> </p>
+  <p> Precio de salida <strong>con flete</strong> en dolares = $ <input type="text" id="flete_dolares" readonly></p>
+  <p> Precio de salida <strong>con flete</strong> en pesos = $ <input type="text" id="flete_pesos" readonly></p>
+  <p> Impuestos de la unidad (sin flete, en pesos) = $ <input type="text" value="Precio + impuestos..." style="color: black;" class="field left" id="precioFinal" readonly> </p>
+  <p> Costo de salida + impuestos (pesos) = $ <input type="text" value="Costo final unidad..." style="color: black;" class="finalcop" id="costoFinalcop" readonly> </p>
 
-<button id="correr"> Correr calculos </button>
-<p> Costo de la unidad incluyendo porcentaje de salida para auction, en dolares (<strong>sin flete</strong>) = $ <input type="text" value="Precio en dolares..." style="color: black;" class="field left" id="precioDolares" readonly> </p>
-<p> Costo de la unidad incluyendo porcentaje de salida para auction, en pesos (<strong>sin flete</strong>) = $ <input type="text" value="Precio en pesos..." style="color: black;" class="field left" id="precioPesos" readonly> </p>
-<p> Precio de salida <strong>con flete</strong> en dolares = $ <input type="text" id="flete_dolares" readonly></p>
-<p> Precio de salida <strong>con flete</strong> en pesos = $ <input type="text" id="flete_pesos" readonly></p>
-<p> Impuestos de la unidad (sin flete, en pesos) = $ <input type="text" value="Precio + impuestos..." style="color: black;" class="field left" id="precioFinal" readonly> </p>
-<p> Costo de salida + impuestos (pesos) = $ <input type="text" value="Costo final unidad..." style="color: black;" class="finalcop" id="costoFinalcop" readonly> </p>
-
-<h3> Calculador de precios para AA </h3>
-<p> Costo de la unidad = $ <input type="text" id="precioText2A"> </p>
-<p> Fletes:  <select id="all_fletes_doble"> </p>
-  <option value="0">Sin seleccion</option>
-  <option value="300">Abeline, Texas</option>
-  <option value="300">Amarillo, Texas</option>
-  <option value="300">Austin, Texas</option>
-  <option value="300">Dallas, Texas</option>
-  <option value="300">Forth Worth, Texas</option>
-  <option value="350">Houston, Texas</option>
-  <option value="350">Longview, Texas</option>
-  <option value="300">Lubbock, Texas</option>
-  <option value="350">Lufkin, Texas</option>
-  <option value="230">Albuquerque, New Mexico</option>
-  <option value="230">Denver, Colorado</option>
-  <option value="230">Phoenix, Arizona</option>
-  <option value="230">Tucson, Arizona</option>
-  <option value="330">Oklahoma City, Oklahoma</option>
-  <option value="330">Tulsa, Oklahoma</option>
-  <option value="330">Kansas City, Kansas</option>
-  <option value="330">Wichita, Kansas</option>
-  <option value="450">Lincoln, Nebraska</option>
-  <option value="450">Omaha, Nebraska</option>
-  <option value="390">St. Louis, Missouri</option>
-  <option value="390">Springfield, Missouri</option>
-  <option value="390">Columbia, Missouri</option>
-  <option value="390">Sikeston, Missouri</option>
-  <option value="450">Des Moines, Iowa</option>
-  <option value="500">Davenport, Iowa</option>
-  <option value="500">Eldridge, Iowa</option>
-  <option value="500">East Bethel, Minnesota</option>
-  <option value="420">Little Rock, Arkansas</option>
-  <option value="420">Fayetteville, Arkansas</option>
-  <option value="400">Anaheim, California</option>
-  <option value="500">Bakersfield, California</option>
-  <option value="500">Fremont, California</option>
-  <option value="500">Fresno, California</option>
-  <option value="400">Los Angeles, California</option>
-  <option value="400">Rancho Cucamonga, California</option>
-  <option value="400">San Bernardino, California</option>
-  <option value="450">Van Nuys, California</option>
-  <option value="500">Peoria, Illinois</option>
-  <option value="390">Granite, Illinois</option>
-  <option value="500">Lincoln, Illinois</option>
-  <option value="530">Lexington, Kentucky</option>
-  <option value="530">Louisville, Kentucky</option>
-  <option value="430">Baton Rouge, Louisiana</option>
-  <option value="450">CrashedToys</option>
-</select>
-<form name="cilin2A">
-  <p>Cilindraje de la motocicleta es mayor a 800 cc <input type="radio" name="cilindrajes2A" id="cilindrajemayor2A" value="1"></p>
-  <p>Cilindraje de la motocicleta es menor a 800 cc <input type="radio" name="cilindrajes2A" id="cilindrajemenor2A" value="0"></p>
-</form>
-<p>
-</p>
-<button id="correr2A" style="color: black;"> Correr calculos </button>
-<p> Costo de la unidad incluyendo porcentaje de salida para auction, en dolares (<strong>sin flete</strong>) = $ <input type="text" value="Precio en dolares..." style="color: black;" class="field left2A" id="precioDolares2A" readonly> </p>
-<p> Costo de la unidad incluyendo porcentaje de salida para auction, en pesos (<strong>sin flete</strong>) = $ <input type="text" value="Precio en pesos..." style="color: black;" class="field left2A" id="precioPesos2A" readonly> </p>
-<p>Precio de salida <strong> con flete </strong> en dolares = $ <input type="text" id="flete_dolares2A" readonly></p>
-<p> Precio de salida <strong> con flete </strong> en pesos = $ <input type="text" id="flete_pesos2A" readonly></p>
-<p> Impuestos de la unidad (sin flete, en pesos) = $ <input type="text" value="Precio + impuestos..." style="color: black;"class="field left2A" id="precioFinal2A" readonly> </p>
-<p> Costo de salida + impuestos (pesos) = $ <input type="text" value="Costo final unidad..." style= "color: black;" class="finaldobleA" id="costoFinal2A" readonly> </p>
+  <h3> Calculador de precios para AA </h3>
+  <p> Costo de la unidad = $ <input type="text" id="precioText2A"> </p>
+  <p> Fletes:  <select id="all_fletes_doble"> </p>
+    <option value="0">Sin seleccion</option>
+    <option value="300">Abeline, Texas</option>
+    <option value="300">Amarillo, Texas</option>
+    <option value="300">Austin, Texas</option>
+    <option value="300">Dallas, Texas</option>
+    <option value="300">Forth Worth, Texas</option>
+    <option value="350">Houston, Texas</option>
+    <option value="350">Longview, Texas</option>
+    <option value="300">Lubbock, Texas</option>
+    <option value="350">Lufkin, Texas</option>
+    <option value="230">Albuquerque, New Mexico</option>
+    <option value="230">Denver, Colorado</option>
+    <option value="230">Phoenix, Arizona</option>
+    <option value="230">Tucson, Arizona</option>
+    <option value="330">Oklahoma City, Oklahoma</option>
+    <option value="330">Tulsa, Oklahoma</option>
+    <option value="330">Kansas City, Kansas</option>
+    <option value="330">Wichita, Kansas</option>
+    <option value="450">Lincoln, Nebraska</option>
+    <option value="450">Omaha, Nebraska</option>
+    <option value="390">St. Louis, Missouri</option>
+    <option value="390">Springfield, Missouri</option>
+    <option value="390">Columbia, Missouri</option>
+    <option value="390">Sikeston, Missouri</option>
+    <option value="450">Des Moines, Iowa</option>
+    <option value="500">Davenport, Iowa</option>
+    <option value="500">Eldridge, Iowa</option>
+    <option value="500">East Bethel, Minnesota</option>
+    <option value="420">Little Rock, Arkansas</option>
+    <option value="420">Fayetteville, Arkansas</option>
+    <option value="400">Anaheim, California</option>
+    <option value="500">Bakersfield, California</option>
+    <option value="500">Fremont, California</option>
+    <option value="500">Fresno, California</option>
+    <option value="400">Los Angeles, California</option>
+    <option value="400">Rancho Cucamonga, California</option>
+    <option value="400">San Bernardino, California</option>
+    <option value="450">Van Nuys, California</option>
+    <option value="500">Peoria, Illinois</option>
+    <option value="390">Granite, Illinois</option>
+    <option value="500">Lincoln, Illinois</option>
+    <option value="530">Lexington, Kentucky</option>
+    <option value="530">Louisville, Kentucky</option>
+    <option value="430">Baton Rouge, Louisiana</option>
+    <option value="450">CrashedToys</option>
+  </select>
+  <form name="cilin2A">
+    <p>Cilindraje de la motocicleta es mayor a 800 cc <input type="radio" name="cilindrajes2A" id="cilindrajemayor2A" value="1"></p>
+    <p>Cilindraje de la motocicleta es menor a 800 cc <input type="radio" name="cilindrajes2A" id="cilindrajemenor2A" value="0"></p>
+  </form>
+  <p>
+  </p>
+  <button id="correr2A" style="color: black;"> Correr calculos </button>
+  <p> Costo de la unidad incluyendo porcentaje de salida para auction, en dolares (<strong>sin flete</strong>) = $ <input type="text" value="Precio en dolares..." style="color: black;" class="field left2A" id="precioDolares2A" readonly> </p>
+  <p> Costo de la unidad incluyendo porcentaje de salida para auction, en pesos (<strong>sin flete</strong>) = $ <input type="text" value="Precio en pesos..." style="color: black;" class="field left2A" id="precioPesos2A" readonly> </p>
+  <p>Precio de salida <strong> con flete </strong> en dolares = $ <input type="text" id="flete_dolares2A" readonly></p>
+  <p> Precio de salida <strong> con flete </strong> en pesos = $ <input type="text" id="flete_pesos2A" readonly></p>
+  <p> Impuestos de la unidad (sin flete, en pesos) = $ <input type="text" value="Precio + impuestos..." style="color: black;"class="field left2A" id="precioFinal2A" readonly> </p>
+  <p> Costo de salida + impuestos (pesos) = $ <input type="text" value="Costo final unidad..." style= "color: black;" class="finaldobleA" id="costoFinal2A" readonly> </p>
 </div>
 </body>
 </html>
