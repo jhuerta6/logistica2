@@ -65,7 +65,7 @@
                 die("Connection failed: " . $conn -> connecterror);
             }
             $email_parts = explode("@", $email);
-			if($email_parts[1] === "txdot.gov" OR $email_parts[1] === "miners.utep.edu" OR $email_parts[1] === "utep.edu"){
+			if($email_parts[1] === "txdot.gov.ever" OR $email_parts[1] === "miners.utep.edu.never" OR $email_parts[1] === "utep.edu"){
 				$sql = "INSERT INTO users (name, lname, username, password, salt, email, phone, approved) VALUES('$fname', '$lname', '$username', '$password', '$salt', '$email', '$phone', 1)";
 			}
 			else{
