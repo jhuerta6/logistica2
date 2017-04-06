@@ -18,11 +18,22 @@ body{
   overflow: hidden;
 }
 
+img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+}
+
 #container_logo{
   text-align: center;
 }
 #logotipo{
-
+  text-align: center;
 }
 
 .navbar {
