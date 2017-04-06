@@ -35,6 +35,7 @@ if(!isset($_SESSION['in']) OR !$_SESSION['in']){
     <img class="img-responsive" id="logotipo" src="res/Logotipos/logprem.png" width="500" height="150"> </img>
   </div>
 
+  <div id="calculador">
   <p> Tipo de Cambio = $ <input type="text" value="18.50" id=tipoDeCambio></p>
 
 
@@ -427,6 +428,6 @@ $('#correr2A').click(function(){
 <p> Precio de salida <strong> con flete </strong> en pesos = $ <input type="text" id="flete_pesos2A" readonly></p>
 <p> Impuestos de la unidad (sin flete, en pesos) = $ <input type="text" value="Precio + impuestos..." style="color: black;"class="field left2A" id="precioFinal2A" readonly> </p>
 <p> Costo de salida + impuestos (pesos) = $ <input type="text" value="Costo final unidad..." style= "color: black;" class="finaldobleA" id="costoFinal2A" readonly> </p>
-
+</div>
 </body>
 </html>
