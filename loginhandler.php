@@ -1,5 +1,4 @@
 <?php
-//TODO: make page return json instead of printing
 	session_start();
 	include('utils.php');
 	if(isset($_POST['submit'])){
