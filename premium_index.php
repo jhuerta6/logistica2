@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(!isset($_SESSION['in']) OR !$_SESSION['in']){
+  header('Location: login.php');
+  exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -337,7 +344,7 @@ $('#correr2A').click(function(){
     <p>Cilindraje de la motocicleta es menor a 800 cc <input type="radio" name="cilindrajes" id="cilindrajemenor" value="0"></p>
   </form>
   <button id="correr" style="color: black;"> Correr calculos </button> <br>
-<br>  <p> Costo de la unidad incluyendo porcentaje de salida para auction, en dolares (<strong>sin flete</strong>) = $ <input type="text" value="Precio en dolares..." style="color: black;" class="field left" id="precioDolares" readonly> </p> <br>
+  <br>  <p> Costo de la unidad incluyendo porcentaje de salida para auction, en dolares (<strong>sin flete</strong>) = $ <input type="text" value="Precio en dolares..." style="color: black;" class="field left" id="precioDolares" readonly> </p> <br>
   <p> Costo de la unidad incluyendo porcentaje de salida para auction, en pesos (<strong>sin flete</strong>) = $ <input type="text" value="Precio en pesos..." style="color: black;" class="field left" id="precioPesos" readonly> </p> <br>
   <p> Precio de salida <strong>con flete</strong> en dolares = $ <input type="text" id="flete_dolares" style="color: black;" readonly></p> <br>
   <p> Precio de salida <strong>con flete</strong> en pesos = $ <input type="text" id="flete_pesos" style="color: black;" readonly></p> <br>
