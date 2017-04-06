@@ -36,25 +36,25 @@ if(!isset($_SESSION['in']) OR !$_SESSION['in']){
   </div>
 
   <div id="calculador">
-  <p> Tipo de Cambio = $ <input type="text" value="18.50" id=tipoDeCambio></p>
+    <p> Tipo de Cambio = $ <input type="text" value="18.50" id=tipoDeCambio></p>
 
 
 
-</body>
+  </body>
 
-<!--<img id="logotipo" url(../res/Fondos/leather.jpg)/>-->
+  <!--<img id="logotipo" url(../res/Fondos/leather.jpg)/>-->
 
 
 
-<script>
+  <script>
 
-$(document).ready(function(){
-  /*var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+  $(document).ready(function(){
+    /*var isMobile = window.matchMedia("only screen and (max-width: 760px)");
 
-  if (!isMobile.matches) {
-  $("#custom_hover_nav").hover(function(){ //show inventario on hover
-  $("#collapse").collapse('toggle');
-});
+    if (!isMobile.matches) {
+    $("#custom_hover_nav").hover(function(){ //show inventario on hover
+    $("#collapse").collapse('toggle');
+  });
 }
 */
 $('#correr').click(function() {
