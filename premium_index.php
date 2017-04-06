@@ -1,10 +1,3 @@
-<?php
-session_start();
-if(!isset($_SESSION['in']) OR !$_SESSION['in']){
-  header('Location: login.php');
-  exit();
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -288,11 +281,11 @@ $('#correr2A').click(function(){
 </script>
 
 
-<div class="panel panel-default" id="calculador">
+<div id="calculador">
   <p> Tipo de Cambio = $ <input type="text" value="18.50" id=tipoDeCambio style="color: black;"></p>
-  <h3> Calculador de precios para Copart </h3>
-  <p> Costo de la unidad = $ <input type="text" id="precioText" style="color: black;"> </p>
-  <p> Flete:  <select id="all_fletes_cop" style="color: black;"> </p>
+  <h3> Calculador de precios para Copart </h3> <br>
+  <p> Costo de la unidad = $ <input type="text" id="precioText" style="color: black;"> </p> <br>
+  <p> Flete:  <select id="all_fletes_cop" style="color: black;"> </p> <br>
     <option value="0">Sin seleccion</option>
     <option value="300">Abeline, Texas</option>
     <option value="300">Amarillo, Texas</option>
@@ -339,23 +332,21 @@ $('#correr2A').click(function(){
     <option value="430">Baton Rouge, Louisiana</option>
     <option value="450">CrashedToys</option>
   </select>
-  <form name="cilin">
+  <br><form name="cilin">
     <p>Cilindraje de la motocicleta es mayor a 800 cc <input type="radio" name="cilindrajes" id="cilindrajemayor" value="1"></p>
     <p>Cilindraje de la motocicleta es menor a 800 cc <input type="radio" name="cilindrajes" id="cilindrajemenor" value="0"></p>
   </form>
-  <p>
-  </p>
-  <button id="correr" style="color: black;"> Correr calculos </button>
-  <p> Costo de la unidad incluyendo porcentaje de salida para auction, en dolares (<strong>sin flete</strong>) = $ <input type="text" value="Precio en dolares..." style="color: black;" class="field left" id="precioDolares" readonly> </p>
-  <p> Costo de la unidad incluyendo porcentaje de salida para auction, en pesos (<strong>sin flete</strong>) = $ <input type="text" value="Precio en pesos..." style="color: black;" class="field left" id="precioPesos" readonly> </p>
-  <p> Precio de salida <strong>con flete</strong> en dolares = $ <input type="text" id="flete_dolares" style="color: black;" readonly></p>
-  <p> Precio de salida <strong>con flete</strong> en pesos = $ <input type="text" id="flete_pesos" style="color: black;" readonly></p>
-  <p> Impuestos de la unidad (sin flete, en pesos) = $ <input type="text" value="Precio + impuestos..." style="color: black;" class="field left" id="precioFinal" readonly> </p>
-  <p> Costo de salida + impuestos (pesos) = $ <input type="text" value="Costo final unidad..." style="color: black;" class="finalcop" id="costoFinalcop" readonly> </p>
+  <button id="correr" style="color: black;"> Correr calculos </button> <br>
+<br>  <p> Costo de la unidad incluyendo porcentaje de salida para auction, en dolares (<strong>sin flete</strong>) = $ <input type="text" value="Precio en dolares..." style="color: black;" class="field left" id="precioDolares" readonly> </p> <br>
+  <p> Costo de la unidad incluyendo porcentaje de salida para auction, en pesos (<strong>sin flete</strong>) = $ <input type="text" value="Precio en pesos..." style="color: black;" class="field left" id="precioPesos" readonly> </p> <br>
+  <p> Precio de salida <strong>con flete</strong> en dolares = $ <input type="text" id="flete_dolares" style="color: black;" readonly></p> <br>
+  <p> Precio de salida <strong>con flete</strong> en pesos = $ <input type="text" id="flete_pesos" style="color: black;" readonly></p> <br>
+  <p> Impuestos de la unidad (sin flete, en pesos) = $ <input type="text" value="Precio + impuestos..." style="color: black;" class="field left" id="precioFinal" readonly> </p> <br>
+  <p> Costo de salida + impuestos (pesos) = $ <input type="text" value="Costo final unidad..." style="color: black;" class="finalcop" id="costoFinalcop" readonly> </p> <br>
 
-  <h3> Calculador de precios para AA </h3>
-  <p> Costo de la unidad = $ <input type="text" id="precioText2A" style="color: black;"> </p>
-  <p> Fletes:  <select id="all_fletes_doble" style="color: black;"> </p>
+  <h3> Calculador de precios para AA </h3> <br>
+  <p> Costo de la unidad = $ <input type="text" id="precioText2A" style="color: black;"> </p> <br>
+  <p> Fletes:  <select id="all_fletes_doble" style="color: black;"> </p> <br>
     <option value="0">Sin seleccion</option>
     <option value="300" style="color: black;">Abeline, Texas</option>
     <option value="300">Amarillo, Texas</option>
@@ -402,19 +393,17 @@ $('#correr2A').click(function(){
     <option value="430">Baton Rouge, Louisiana</option>
     <option value="450">CrashedToys</option>
   </select>
-  <form name="cilin2A">
+  <br><form name="cilin2A">
     <p>Cilindraje de la motocicleta es mayor a 800 cc <input type="radio" name="cilindrajes2A" id="cilindrajemayor2A" value="1"></p>
     <p>Cilindraje de la motocicleta es menor a 800 cc <input type="radio" name="cilindrajes2A" id="cilindrajemenor2A" value="0"></p>
   </form>
-  <p>
-  </p>
-  <button id="correr2A" style="color: black;"> Correr calculos </button>
-  <p> Costo de la unidad incluyendo porcentaje de salida para auction, en dolares (<strong>sin flete</strong>) = $ <input type="text" value="Precio en dolares..." style="color: black;" class="field left2A" id="precioDolares2A" readonly> </p>
-  <p> Costo de la unidad incluyendo porcentaje de salida para auction, en pesos (<strong>sin flete</strong>) = $ <input type="text" value="Precio en pesos..." style="color: black;" class="field left2A" id="precioPesos2A" readonly> </p>
-  <p>Precio de salida <strong> con flete </strong> en dolares = $ <input type="text" id="flete_dolares2A" style="color: black;" readonly></p>
-  <p> Precio de salida <strong> con flete </strong> en pesos = $ <input type="text" id="flete_pesos2A" style="color: black;" readonly></p>
-  <p> Impuestos de la unidad (sin flete, en pesos) = $ <input type="text" value="Precio + impuestos..." style="color: black;"class="field left2A" id="precioFinal2A" readonly> </p>
-  <p> Costo de salida + impuestos (pesos) = $ <input type="text" value="Costo final unidad..." style= "color: black;" class="finaldobleA" id="costoFinal2A" readonly> </p>
+  <br><button id="correr2A" style="color: black;"> Correr calculos </button><br>
+  <br> <p> Costo de la unidad incluyendo porcentaje de salida para auction, en dolares (<strong>sin flete</strong>) = $ <input type="text" value="Precio en dolares..." style="color: black;" class="field left2A" id="precioDolares2A" readonly> </p> <br>
+  <p> Costo de la unidad incluyendo porcentaje de salida para auction, en pesos (<strong>sin flete</strong>) = $ <input type="text" value="Precio en pesos..." style="color: black;" class="field left2A" id="precioPesos2A" readonly> </p> <br>
+  <p>Precio de salida <strong> con flete </strong> en dolares = $ <input type="text" id="flete_dolares2A" style="color: black;" readonly></p> <br>
+  <p> Precio de salida <strong> con flete </strong> en pesos = $ <input type="text" id="flete_pesos2A" style="color: black;" readonly></p> <br>
+  <p> Impuestos de la unidad (sin flete, en pesos) = $ <input type="text" value="Precio + impuestos..." style="color: black;"class="field left2A" id="precioFinal2A" readonly> </p> <br>
+  <p> Costo de salida + impuestos (pesos) = $ <input type="text" value="Costo final unidad..." style= "color: black;" class="finaldobleA" id="costoFinal2A" readonly> </p> <br>
 </div>
 </body>
 </html>
