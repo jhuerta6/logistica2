@@ -288,7 +288,7 @@ $('#correr2A').click(function(){
 </script>
 
 
-<div id="calculador">
+<div class="panel panel-default" id="calculador">
   <p> Tipo de Cambio = $ <input type="text" value="18.50" id=tipoDeCambio style="color: black;"></p>
   <h3> Calculador de precios para Copart </h3>
   <p> Costo de la unidad = $ <input type="text" id="precioText" style="color: black;"> </p>
